@@ -45,7 +45,7 @@ section{
   padding: 5em 2em;
 }
 
-.btn:focus{
+.btn:focus, .btn1:focus{
   outline: 3px solid var(--clr-dark);
   outline-offset: 3px;
 }
@@ -64,7 +64,22 @@ section{
   transition: transform 200ms ease-in-out;
 }
 
-.btn:hover{
+.btn1{
+  display: inline-block;
+  padding: .5em 1.5em;
+  background: var(--clr-light);
+  color: var(--clr-accent);
+  text-decoration: none;
+  cursor: pointer;
+  font-size: .8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: var(--fw-bold);
+  transition: transform 200ms ease-in-out;
+}
+
+
+.btn:hover, .btn1:hover{
   transform: scale(1.2);
 }
 
