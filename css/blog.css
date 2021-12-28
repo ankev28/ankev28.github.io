@@ -23,6 +23,7 @@
   --bs: .25em .25em .75em rgba(0,0,0,.25);
 }
 
+
 @media(min-width: 800px) {
   :root{
     --fs-h1: 4.5rem;
@@ -31,6 +32,7 @@
     --fs-body: 1.125rem;
   }
 }
+
 
 body{
   background: var(--clr-light);
@@ -43,6 +45,11 @@ body{
 
 section{
   padding: 5em 2em;
+}
+
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
 }
 
 .btn:focus{
@@ -93,6 +100,7 @@ section{
 }
 
 
+
 img{
   display: block;
   max-width: 100%;
@@ -139,9 +147,28 @@ h3{
   margin: 0 auto;
   text-align: center;
   max-width: 1000px;
+  margin-bottom: 5em;
 }
 
-.post
+.posts{
+  max-width: 1000px;
+  display: inline-block;
+}
+
+.post{
+  border-radius: 25px;
+  background: var(--clr-light);
+  padding: 6em;
+  margin-bottom: 5em;
+  color: var(--clr-dark);
+  transition: transform 200ms ease-in-out;
+}
+
+.post:hover{
+  transform: scale(1.2);
+}
+
+
 
 .footer{
   background: var(--clr-light);
