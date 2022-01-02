@@ -128,10 +128,15 @@ h3{
 }
 
 .header{
-  background-color: var(--clr-accent);
+  /*background-color: var(--clr-accent);*/
   background-size: cover;
   color: var(--clr-light);
   text-align: center;
+}
+
+#header-post-1{
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("../pausechamp.png");
+  background-size: cover;
 }
 
 .header:after{
@@ -152,6 +157,17 @@ h3{
   padding: 1em;
 }
 
+.paragraphs{
+  color: var(--clr-dark);
+  text-align: left;
+  padding-top: 2em;
+  padding-left: 3em;
+  padding-right: 3em;
+}
+
+.paragraph{
+  padding-bottom: 1em;
+}
 
 
 
