@@ -1,3 +1,8 @@
+/*
+  template css for blogposts
+*/
+
+
 *,
 *::before,
 *::after{
@@ -23,6 +28,7 @@
   --bs: .25em .25em .75em rgba(0,0,0,.25);
 }
 
+
 @media(min-width: 800px) {
   :root{
     --fs-h1: 4.5rem;
@@ -31,6 +37,7 @@
     --fs-body: 1.125rem;
   }
 }
+
 
 body{
   background: var(--clr-light);
@@ -45,7 +52,12 @@ section{
   padding: 5em 2em;
 }
 
-.btn:focus, .btn1:focus{
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+}
+
+.btn:focus{
   outline: 3px solid var(--clr-dark);
   outline-offset: 3px;
 }
@@ -64,22 +76,7 @@ section{
   transition: transform 200ms ease-in-out;
 }
 
-.btn1{
-  display: inline-block;
-  padding: .5em 1.5em;
-  background: var(--clr-light);
-  color: var(--clr-accent);
-  text-decoration: none;
-  cursor: pointer;
-  font-size: .8rem;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-weight: var(--fw-bold);
-  transition: transform 200ms ease-in-out;
-}
-
-
-.btn:hover, .btn1:hover{
+.btn:hover{
   transform: scale(1.2);
 }
 
@@ -108,6 +105,7 @@ section{
 }
 
 
+
 img{
   display: block;
   max-width: 100%;
@@ -129,151 +127,32 @@ h3{
   font-size: var(--fs-h3)
 }
 
-.section__title{
-  margin-bottom: .25em;
-}
-
-.section__title_intro{
-  font-weight: var(--fw-reg);
-}
-
-.section__subtitle{
-  margin: 0;
-  font-size: var(--fs-h3);
-}
-
-.section__subtitle--intro, .section__subtitle--aboutme{
-  background: var(--clr-accent);
-  font-family: var(--ff-secondary);
-}
-
-
-.logo{
-  max-width: 100px;
-}
-
-
-.intro{
-  position: relative;
-}
-
-.section__title--intro{
-  margin: 0;
-  font-size: var(--fs-h1);
-  text-align: center;
-}
-
-.portfolio__img{
-  box-shadow: var(--bs);
-}
-
-@media (min-width 600px){
-  .intro{
-    display: grid;
-    width: min-content;
-    margin: 0 auto;
-    grid-column-gap: 1em;
-    grid-template-areas:"img title" "img subtitle";
-    grid-template-columns: min-content max-content;
-  }
-
-
-}
-
-.aboutme{
-  /*background-image: url(mashiro.jpg);*/
+.header{
   background-color: var(--clr-accent);
   background-size: cover;
   color: var(--clr-light);
   text-align: center;
 }
 
-.personal{
-  max-width: 350px;
-  margin: 0 auto;
-}
-
-
-
-.section__title--aboutme{
-  color: var(--clr-light);
-  position: relative;
-}
-
-.section__title--aboutme::after{
+.header:after{
   content: '';
   display: block;
-  width: 10em;
+  width: 2em;
   height: 1px;
   margin: .5em auto 1em;
   background: var(--clr-light);
   opacity: .25;
 }
 
-.info{
-  margin-bottom: 2em;
+.title{
+  padding: 1em;
 }
 
-.aboutmepicture{
-  display: block;
-  max-width: 400px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 3.5em;
-}
-
-@media (min-width: 800px){
-  .info{
-    display: flex;
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .personal + .personal{
-    margin-left: 2em;
-  }
-
-}
-
-.blurb{
-  text-align: center;
-  margin-bottom: 3em;
-}
-
-.personalblog{
-  text-align: center;
-  background-color: var(--clr-light);
-  background-size: cover;
-  color: var(--clr-dark);
+.date{
+  padding: 1em;
 }
 
 
-.section__title--personalblog:after, .section__title--projects:after{
-  content: '';
-  display: block;
-  width: 10em;
-  height: 1px;
-  margin: .5em auto 1em;
-  background: var(--clr-dark);
-  opacity: .25;
-}
-
-
-.blogpicture{
-  display: block;
-  max-width: 400px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-
-.projects{
-  background-color: var(--clr-accent);
-  background-size: cover;
-  color: var(--clr-light);
-  text-align: center;
-}
 
 
 .footer{
