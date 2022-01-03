@@ -129,6 +129,7 @@ h3{
 
 .section__title--projects{
   text-align: center;
+  padding-top: 1em;
 }
 
 .section__title--projects::after{
