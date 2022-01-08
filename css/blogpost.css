@@ -139,6 +139,11 @@ h3{
   background-size: cover;
 }
 
+#header-post-2{
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("../how.jpg");
+  background-size: contain;
+}
+
 .title:after{
   content: '';
   display: block;
@@ -153,16 +158,39 @@ h3{
   padding-top: 1em;
 }
 
+.video-embed{
+  text-align: center;
+  padding-top: 2em;
+}
+
+.video-caption{
+  font-size: 16px;
+  padding-bottom: 1em;
+}
+
+.section{
+  padding-bottom: 1em;
+}
+
+.par-head{
+  color: var(--clr-dark);
+  background-color: var(--clr-accent);
+  text-align: center;
+  padding: 2em;
+}
 
 .paragraphs{
+  font-size: var(--fs-h3);
   color: var(--clr-dark);
-  text-align: left;
   padding-top: 2em;
-  padding-left: 3em;
-  padding-right: 3em;
+  margin: 0 auto;
 }
 
 .paragraph{
+  padding-top: 2em;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
   padding-bottom: 1em;
 }
 

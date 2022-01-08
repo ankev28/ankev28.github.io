@@ -179,6 +179,12 @@ h3{
   background-size: cover;
 }
 
+#post-2{
+  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("../how.jpg");
+  color: var(--clr-light);
+  background-size: auto;
+}
+
 
 
 .footer{
